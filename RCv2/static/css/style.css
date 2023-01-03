@@ -1,0 +1,246 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4c2716;
+  background-color: #f5f5f5;
+  /* background-image: url('bg-1.png');
+  background-size: cover; */
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f5eade;
+  color: #fff;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+}
+.navbar-brand {
+  align-self: baseline;
+}
+
+.navbar a {
+  color: #d2ae8c;
+}
+
+.navbar a:hover {
+  color: #4c2716;
+}
+
+.active{
+  color: #4c2716;
+}
+
+/* Slideshow Home*/
+.home-slideshow .carousel-inner {
+transition: transform 0.6s ease;
+position: relative;
+width: 200px;
+height: 300px;
+margin: 0 auto;
+overflow: hidden;
+}
+
+.home-slideshow .carousel-item {
+transition: transform 0.6s ease;
+position: relative;
+width: 200px;
+height: 300px;
+margin: 0 auto;
+overflow: hidden;
+}
+
+.home-slideshow .carousel-image {
+width: 200px;
+height: 300px;
+object-fit: cover;
+object-position: center;
+border-radius: 5%;
+border-style: dashed;
+border-color: #a67c52;
+}
+
+.home-slideshow .carousel-indicators {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+.home-slideshow .carousel-indicator {
+cursor: pointer;
+display: inline-block;
+width: 10px;
+height: 10px;
+margin: 0 4px;
+background-color: #bbb;
+border-radius: 50%;
+transition: background-color 0.6s ease;
+}
+
+.home-slideshow .carousel-indicator.active, .carousel-indicator:hover {
+background-color: #717171;
+}
+
+/* Slideshow Pooja Mandirs*/
+.carousel-inner {
+  transition: transform 0.6s ease;
+  /* width: 100%; */
+  height: 300px;
+}
+
+.carousel-item {
+  transition: transform 0.6s ease;
+  /* width: 100%; */
+  height: 100%;
+}
+
+.carousel-item img {
+  /* width: 100%; */
+  height: 100%;
+
+  border-radius: 5%;
+}
+
+.carousel .next {
+  border-radius: 3px 0 0 3px;
+}
+
+.carousel-control-prev .prev:hover, .carousel-control-next .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Cards */
+.pm-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width:auto;
+  height: auto;
+}
+
+.card-body{
+  align-self: baseline;
+}
+
+.card h3 {
+  margin: 10px;
+  font-size: 24px;
+}
+
+.card p {
+  margin: 10px;
+  font-size: 18px;
+}
+
+.flex-space{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Shadow animation */
+
+.shadow-animation {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+}
+  
+.shadow-animation:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.6s ease;
+}
+/* Smooth scroll */
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Text pop out */
+
+.text-pop-out {
+  font-size: 1.5em;
+  transition: font-size 0.5s;
+}
+
+.text-pop-out:hover {
+  font-size: 2em;
+}
+
+/* Card image */
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width:auto;
+  height: auto;
+}
+
+.card-img {
+  height: 200px;
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+/* Card text */
+
+.card-text {
+  height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Style the accordion button */
+#product-details, #upgrades{
+  width: 100%;
+}
+
+#product-details button, #upgrades button {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+}
+
+/* Style the accordion button on hover */
+#product-details button:hover, #upgrades button:hover {
+  background-color: #ddd;
+}
+
+/* Style the accordion content */
+#product-details .collapse, #upgrades .collapse {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Add a "show" class to the accordion content when the button is clicked */
+#product-details .collapse.show, #upgrades .collapse.show {
+  max-height: 500px;
+}
+
+
+/* Style the footer */
+footer {
+  box-shadow: 8px 4px 16px 0 rgba(0,0,0,0.8);
+  color: #d2ae8c;
+  background-color:#f5eade;
+  margin-top: 5%;
+}
+

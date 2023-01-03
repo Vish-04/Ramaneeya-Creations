@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <title>Ramaneeya Creations | Upgrades</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Ramaneeya Creations logo" height="50"></a>
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+  <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/pooja-mandirs">Pooja Mandirs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/gallery">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/upgrades"><div class="active">Upgrades</div></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/faq">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact-us">Contact Us</a>
+      </li>
+    </ul>
+  <!-- </div> -->
+</nav>
+    
+    <!-- Page content -->
+    <div class="container mt-5">
+      <h1 class="text-center mb-5">Upgrades</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Pooja Mandir Doors/Side Pannels</h2>
+          <p>You can choose 2 doors or 4 doors (bi-fold), Some mandirs definitely need 4 doors because of the size and some cannot accommodate 4 doors.  Please see the below images for reference.</p>
+          <h3>Pricing:</h3>
+          <ul>
+            <li>Bifold: $100</li>
+            <li>2 Doors: $75</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img src="{{ url_for('static', filename='images/m1.jpg') }}" alt="LED lighting for pooja mandir" class="img-fluid">
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6 order-md-2">
+          <h2>Pooja Mandir Gopuram</h2>
+          <p>Pooja mandir gopuram will add elegant look to mandir.  You can choose one level or two level gopuram and different kalashas to add the desired look you want.  Please see the images for reference.</p>
+          <h3>Pricing:</h3>
+          <ul>
+            <li>Shanku Chakra: $100</li>
+            <li>2 Level Gopurum: $75</li>
+          </ul>
+        </div>
+        <div class="col-md-6 order-md-1">
+          <img src="{{ url_for('static', filename='images/m1.jpg') }}" alt="Hand-carved details on a pooja mandir" class="img-fluid">
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <h2>Pooja Mandir Bottom Storage Doors/Pullout Trays/Drawers</h2>
+          <p>You can choose different designs of the bottom storage doors, drawers. Please see the images for reference.</p>
+          <h3>Pricing:</h3>
+          <ul>
+            <li>Pullout Tray: $150</li>
+            <li>Bottom Storage Doors: $100</li>
+            <li>Drawers: $100</li>
+          </ul>
+        </div>
+        <div class="col-md-6 order-md-2"></div> <!-- YOO VISH DOUBLE CHECK THIS LINE-->
+        <img src="{{ url_for('static', filename='images/m1.jpg') }}" alt="Inlay work on a pooja mandir" class="img-fluid">
+    </div>
+  </div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.0/dist/umd/popper.min.js" integrity="sha384-tZOo9R/4W4e6nrhnDUYz6UdS8fNkg6Ikq3n1G6lQM8uI7G2QYwYf7TmTpLsT7ZsC" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<!-- Import custom JS -->
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+</body>
+
+<!-- Footer -->
+<footer class="py-3 mt-10">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4 font color="#d2ae8c">Contact Info</h4>
+        <ul font color="#d2ae8c" class="list-unstyled">
+          <li>Gold River, CA 95670</li>
+          <li>Email: ramaneeyacreations@gmail.com</li>
+          <li>Phone: (916) 209-0520</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4 font color="#d2ae8c">Follow Us</h4>
+        <div class="col-sd-4">
+          <a href="#" font color="#d2ae8c"><i class="fa fa-twitter fa-2x"></i></a>
+          <a href="#" font color="#d2ae8c"><i class="fa fa-instagram fa-2x"></i></a>
+          <a href="#" font color="#d2ae8c"><i class="fa fa-facebook fa-2x"></i></a>
+          <a href="#" font color="#d2ae8c"><i class="fa fa-whatsapp fa-2x"></i></a>
+        </div>
+      </div>
+      <div class="col-sd-6">
+        <h4 font color="#d2ae8c">Copyright &copy; Ramaneeya Creations 2022</h4>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
+    
